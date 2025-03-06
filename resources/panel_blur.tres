@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://mxku4o65ksp2"]
+
+[ext_resource type="Shader" uid="uid://cuxiyianrhfm6" path="res://addons/z_console/resources/panel_blur.gdshader" id="1_80nnx"]
+
+[resource]
+shader = ExtResource("1_80nnx")
+shader_parameter/mix_percentage = 0.383

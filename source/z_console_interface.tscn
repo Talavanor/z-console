@@ -1,0 +1,104 @@
+[gd_scene load_steps=5 format=3 uid="uid://mn7qhh17v6bi"]
+
+[ext_resource type="Theme" uid="uid://b6lj4i8a6mrqq" path="res://addons/z_console/resources/console_theme.tres" id="1_7s2t4"]
+[ext_resource type="Script" uid="uid://c1gagccr0csnq" path="res://addons/z_console/source/z_console_interface.gd" id="1_qwgml"]
+[ext_resource type="Script" uid="uid://vrkxn2k0busq" path="res://addons/z_console/source/z_console_line.gd" id="2_qwgml"]
+[ext_resource type="Material" uid="uid://mxku4o65ksp2" path="res://addons/z_console/resources/panel_blur.tres" id="3_6h6f6"]
+
+[node name="ZConsoleInterface" type="Control"]
+process_priority = 12
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 2
+theme = ExtResource("1_7s2t4")
+script = ExtResource("1_qwgml")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 2
+theme = ExtResource("1_7s2t4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="HistoryPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+material = ExtResource("3_6h6f6")
+custom_minimum_size = Vector2(512, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+mouse_filter = 2
+
+[node name="HistoryLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HistoryPanel"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(544, 200)
+layout_mode = 2
+bbcode_enabled = true
+scroll_following = true
+autowrap_mode = 0
+vertical_alignment = 2
+
+[node name="AutoMenuPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+material = ExtResource("3_6h6f6")
+custom_minimum_size = Vector2(512, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 10
+mouse_filter = 2
+
+[node name="AutoMenuLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/AutoMenuPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 8
+bbcode_enabled = true
+text = "[i][color=ffff73ff]> [font top=2.0 bt=2.0]z.command.preview[font_size=13] -> selected cheat[/font_size][/font][/color][/i]
+  [font top=2.0 bt=2.0]demo.cheat.00[font_size=13] -> cheat tip[/font_size][/font]
+  [font top=2.0 bt=2.0]demo.cheat.01[font_size=13] -> cheat tip[/font_size][/font]
+  [font top=2.0 bt=2.0]demo.cheat.02[font_size=13] -> cheat tip[/font_size][/font]
+  [font top=2.0 bt=2.0]demo.cheat.03[font_size=13] -> cheat tip[/font_size][/font]
+"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 2
+
+[node name="LineEditPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+material = ExtResource("3_6h6f6")
+custom_minimum_size = Vector2(640, 40)
+layout_mode = 2
+
+[node name="ProxyLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/LineEditPanel"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+size_flags_vertical = 4
+bbcode_enabled = true
+text = "[fill]z.com[color=919191ff]mand.preview[/color] 	 [color=919191ff]arg1 : bool = value 	 arg2 : float = 0.2[/color] 	 [color=ffff73ff][i]tip[/i][/color][/fill]"
+scroll_active = false
+tab_size = 8
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="MarginContainer/VBoxContainer/LineEditPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+drag_and_drop_selection_enabled = false
+flat = true
+caret_blink = true
+script = ExtResource("2_qwgml")
+c_auto = Color(0.57, 0.57, 0.57, 1)
+c_tip = Color(1, 1, 0.45, 1)
+metadata/_custom_type_script = "uid://vrkxn2k0busq"

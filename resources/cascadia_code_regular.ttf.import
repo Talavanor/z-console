@@ -1,0 +1,41 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://d3spr2o5cuvop"
+path="res://.godot/imported/cascadia_code_regular.ttf-caf32689b0fa9ed61826f2d2c4f2a0cd.fontdata"
+
+[deps]
+
+source_file="res://addons/z_console/resources/cascadia_code_regular.ttf"
+dest_files=["res://.godot/imported/cascadia_code_regular.ttf-caf32689b0fa9ed61826f2d2c4f2a0cd.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=2
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[{
+"chars": [],
+"glyphs": [],
+"name": "New Configuration",
+"size": Vector2i(16, 0),
+&"variation_embolden": 0.0
+}]
+language_support={}
+script_support={}
+opentype_features={}
