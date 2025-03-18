@@ -211,11 +211,13 @@ func test_cheat(str : String = "", i : int = 16) -> float:
 
 
 func register_defaults() -> void:
-	add_child.call_deferred(ZDefaultCheats.new())
-	register_cheat("tcheat", test_cheat, "A test cheat")
-	register_cheat("tc", test_cheat, "An abbreviated test cheat")
-	register_cheat("z.purge.console", purge_history, "Purges all console history.")
-	register_cheat("z.print.args", print_all_args, "Prints all arguments for registered cheats.")
+	var load_defaults := ProjectSettings.get_setting(ZConsts.SETTING_PATH % "show_demo_cheats")
+	if load_defaults:
+		add_child.call_deferred(ZDefaultCheats.new())
+		register_cheat("tcheat", test_cheat, "A test cheat")
+		register_cheat("tc", test_cheat, "An abbreviated test cheat")
+		register_cheat("z.purge.console", purge_history, "Purges all console history.")
+		register_cheat("z.print.args", print_all_args, "Prints all arguments for registered cheats.")
 
 
 func print_all_args() -> void:

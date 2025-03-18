@@ -10,6 +10,7 @@ const T_VEC3 : String = '[color={c_dim}] > [font_size={val_size}]{val_type} [/fo
 
 const T_VAL_COLOR : String = "[color={c_hex}]#{hex}[/color][color={c_dim}] | [/color][color={c_red}]r:{red}[/color] [color={c_green}]g:{green}[/color] [color={c_blue}]b:{blue}[/color] [color={c_alpha}]a:{alpha}[/color]"
 
+const SETTING_PATH : String = "addons/z-console/%s"
 
 static var f_precision : int = 2
 static var font_size : float = 14.0

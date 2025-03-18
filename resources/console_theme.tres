@@ -1,8 +1,8 @@
 [gd_resource type="Theme" load_steps=8 format=3 uid="uid://b6lj4i8a6mrqq"]
 
-[ext_resource type="StyleBox" uid="uid://c2qwpxw8mthgn" path="res://addons/z_console/resources/console_box.tres" id="1_fenqx"]
-[ext_resource type="FontFile" uid="uid://d3spr2o5cuvop" path="res://addons/z_console/resources/cascadia_code_regular.ttf" id="2_tj0kr"]
-[ext_resource type="FontFile" uid="uid://dblw7efkhqe7t" path="res://addons/z_console/resources/cascadia_code_italic.ttf" id="3_ui12w"]
+[ext_resource type="StyleBox" uid="uid://c2qwpxw8mthgn" path="res://addons/z-console/resources/console_box.tres" id="1_fenqx"]
+[ext_resource type="FontFile" uid="uid://bdgeb03hqhalw" path="res://addons/z-console/resources/cascadia_code_regular.ttf" id="2_ggfrd"]
+[ext_resource type="FontFile" uid="uid://c0rhrfy02appb" path="res://addons/z-console/resources/cascadia_code_italic.ttf" id="3_tnlx1"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e2ph3"]
 
@@ -20,7 +20,6 @@ corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
 [resource]
-default_font = ExtResource("2_tj0kr")
 default_font_size = 14
 LineEdit/colors/font_color = Color(0.87451, 0.87451, 0.87451, 0)
 LineEdit/styles/focus = SubResource("StyleBoxEmpty_e2ph3")
@@ -32,9 +31,9 @@ MarginContainer/constants/margin_right = 16
 MarginContainer/constants/margin_top = 16
 PanelContainer/styles/panel = ExtResource("1_fenqx")
 RichTextLabel/constants/line_separation = 0
-RichTextLabel/fonts/bold_font = ExtResource("2_tj0kr")
-RichTextLabel/fonts/bold_italics_font = ExtResource("3_ui12w")
-RichTextLabel/fonts/italics_font = ExtResource("3_ui12w")
-RichTextLabel/fonts/normal_font = ExtResource("2_tj0kr")
+RichTextLabel/fonts/bold_font = ExtResource("2_ggfrd")
+RichTextLabel/fonts/bold_italics_font = ExtResource("3_tnlx1")
+RichTextLabel/fonts/italics_font = ExtResource("3_tnlx1")
+RichTextLabel/fonts/normal_font = ExtResource("2_ggfrd")
 VBoxContainer/constants/separation = 8
 VScrollBar/styles/scroll = SubResource("StyleBoxFlat_tj0kr")

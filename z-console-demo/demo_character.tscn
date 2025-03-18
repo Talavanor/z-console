@@ -1,8 +1,8 @@
 [gd_scene load_steps=12 format=3 uid="uid://ssr47dki3tnf"]
 
-[ext_resource type="Script" uid="uid://sf5w58hk2mwv" path="res://demo/demo_character.gd" id="1_2pgc4"]
-[ext_resource type="Texture2D" uid="uid://d1lmi8b5cwk3m" path="res://demo/resources/t_player.png" id="2_rncjn"]
-[ext_resource type="Script" uid="uid://c7g8hmqfmpdim" path="res://demo/anim_rig.gd" id="3_sykt8"]
+[ext_resource type="Script" uid="uid://sf5w58hk2mwv" path="res://addons/z-console/z-console-demo/demo_character.gd" id="1_2pgc4"]
+[ext_resource type="Texture2D" uid="uid://brfn1v1roliuf" path="res://addons/z-console/z-console-demo/resources/t_player.png" id="2_rncjn"]
+[ext_resource type="Script" uid="uid://c7g8hmqfmpdim" path="res://addons/z-console/z-console-demo/anim_rig.gd" id="3_sykt8"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rncjn"]
 radius = 16.0
