@@ -20,10 +20,14 @@ func _ready() -> void:
 
 ## Input example to respect console interruption
 func _unhandled_input(_event: InputEvent) -> void:
-	jump_pressed = Input.is_action_pressed("jump")
+	jump_pressed = Input.is_physical_key_pressed(KEY_SPACE) or Input.is_physical_key_pressed(KEY_W)
 	if jump_pressed and is_on_floor():
 		velocity.y = -JUMP_VELOCITY
-	direction = Input.get_axis("move_left", "move_right")
+
+	var left_pressed := Input.is_physical_key_pressed(KEY_D) as float
+	var right_pressed := Input.is_physical_key_pressed(KEY_A) as float
+
+	direction = left_pressed - right_pressed
 
 
 func _physics_process(delta: float) -> void:
